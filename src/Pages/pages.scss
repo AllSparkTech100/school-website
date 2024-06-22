@@ -113,9 +113,25 @@
   }
 }
 
-.duties{
+.duties, .learns{
   margin-top:10rem;
 }
+
+.learns{
+  h3{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $fontFamily;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  img{
+    position: relative;
+    top: 3rem;
+  }
+}
+
 
 @media screen and (max-widt: 320px) {
 }
