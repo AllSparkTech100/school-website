@@ -1,0 +1,121 @@
+@import "../_variable";
+
+// Styles for the Home page
+.carrier_error {
+  background-image: url("/public/images/mini.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: 30% 50%;
+  .error_inner {
+    position: relative;
+    top: 12rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h4 {
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.696),
+      rgba(0, 0, 0, 0.696)
+    ),
+    url("/public/images/high.jpg");
+  background-position: center;
+  font-family: $fontFamily;
+  .hero_inner {
+    padding: 3rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10rem;
+    line-height: 1;
+    p {
+      font-size: 1.3rem;
+      span {
+        color: $primary;
+      }
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 55px;
+    }
+  }
+}
+
+.applications {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+.service {
+  margin-top: 14rem;
+  .serve_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    font-family: $fontFamily;
+  }
+  p {
+    font-size: 1.12rem;
+  }
+}
+
+.courses {
+  margin-top: 10rem;
+}
+
+.support {
+  margin-top: 15rem;
+  h3 {
+    font-family: $fontFamily;
+    margin: 8rem;
+  }
+  p {
+    font-size: 1.12rem;
+  }
+
+  .message {
+    border-radius: 20px;
+    height: 100%;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Styles for About Section
+.about_intro {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.792)),
+    url("/public/images/library.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  h2 {
+    color: $accent;
+    font-size: 3rem;
+    font-family: $font;
+    font-weight: bold;
+  }
+}
+
+.duties{
+  margin-top:10rem;
+}
+
+@media screen and (max-widt: 320px) {
+}
