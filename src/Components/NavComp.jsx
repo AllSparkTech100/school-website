@@ -1,9 +1,8 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import "../app.scss";
 import { useState } from "react";
-// import { FaHome } from "react-icons/fa";
-// import { FcAbout } from "react-icons/fc";
-// import { PiStudent } from "react-icons/pi";
+import { RiMenuAddFill } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 
 function NavComp() {
   // const [isScrolled, setIsScrolled] = useState(false);
@@ -97,11 +96,11 @@ function NavComp() {
               </Nav>
             </Navbar.Collapse>
             <Button
-              className="d-lg-none d-sm-block shadow-none border-0 rounded-5 menu_iconn "
+              className="d-lg-none d-sm-block bg-transparent shadow-none border-0 rounded-5 menu_iconn "
               variant="secondary"
               onClick={toggleMenu}
             >
-              {isMenuVisible ? "X" : "Menu"}
+              {isMenuVisible ? <IoClose size={30}/> : <RiMenuAddFill size={30}/>}
             </Button>
           </Container>
         </Navbar>

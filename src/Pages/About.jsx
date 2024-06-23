@@ -201,8 +201,8 @@ function About() {
             </Col>
           </Row>
         </Container>
-
-        <Container fluid>
+        {/* Testimony */}
+        <Container className="parents-discuss">
           <Parents />
         </Container>
       </main>
