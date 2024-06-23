@@ -34,14 +34,11 @@
     url("/public/images/high.jpg");
   background-position: center;
   font-family: $fontFamily;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   .hero_inner {
-    padding: 3rem;
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 10rem;
-    line-height: 1;
     p {
       font-size: 1.3rem;
       span {
@@ -140,8 +137,19 @@
 // Styles for Contact Section
 .contact_intro {
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)),
-    url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fhome.oxfordowl.co.uk%2Fat-school%2Freception-at-primary-school%2Fwhat-to-expect-in-reception-age-4-5%2F&psig=AOvVaw3yZs_d2RJiaP3iY6YCWNEy&ust=1719237193976000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDKqfDv8YYDFQAAAAAdAAAAABAE");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.529)),
+    url("/public/images/high.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: $accent;
+    font-family: $font;
+    font-size: 3rem;
+  }
+
+  .contact_carrier {
+  }
 }
 
 @media screen and (max-widt: 320px) {

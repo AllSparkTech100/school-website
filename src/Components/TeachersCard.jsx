@@ -15,17 +15,16 @@ function TeachersCard(props) {
     });
   });
   return (
-    <div>
+    <>
       <Card
         data-aos="fade-up"
         data-aos-duration="500"
-        className="px-1 teaching_staff w-auto"
+        className="teaching_staff w-auto"
         rounded-4
-        style={{ height: "60vh", border: "none" }}
       >
-        <Card.Img variant="top" src={props.imgUrl} className="h-100 h-md-50" />
+        <Card.Img variant="top" src={props.imgUrl} className="h-100" />
         <Card.Body>
-          <Card.Title className="fw-bold text-center fs-6">
+          <Card.Title className="fw-bold text-center mt-2 fs-6">
             {props.name}
           </Card.Title>
           <Card.Text
@@ -49,7 +48,7 @@ function TeachersCard(props) {
           </div>
         </Card.Body>
       </Card>
-    </div>
+    </>
   );
 }
 
