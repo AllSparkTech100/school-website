@@ -45,62 +45,66 @@ function NavComp() {
   return (
     <>
       <header>
-        <div className="second_inner_in">
-          <Navbar expand="lg" fixed="top" className="">
-            <Container fluid="sm">
-              <Navbar.Brand href="/" className="heading text-white fw-bold">
-                Nerissa Academy
-              </Navbar.Brand>
-              <Navbar.Toggle
-                aria-controls="basic-navbar-nav"
-                className="shadow-none d-none border-2 border-primary "
-                variant="secondary"
-              />
+        <Navbar expand="lg" fixed="top" className="mt-2">
+          <Container fluid="sm">
+            <Navbar.Brand href="/" className="heading text-white fw-bold">
+              Nerissa High School
+            </Navbar.Brand>
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              className="shadow-none d-none border-2 border-primary "
+              variant="secondary"
+            />
 
-              <Navbar.Collapse id="basic-navbar-nav shadow-none">
-                <Nav className="mx-auto heading align-items-md-center justify-content-md-between">
-                  <Nav.Link
-                    href="/"
-                    className="text-white fw-semibold fs-6 me-4"
-                  >
+            <Navbar.Collapse id="basic-navbar-nav shadow-none">
+              <Nav className="w-100 nav_heading align-items-md-center justify-content-md-between">
+                <Nav.Link href="/" className="text-white fw-semibold fs-6 me-4">
                   Home
-                  </Nav.Link>
-                  <Nav.Link
-                    href="/about"
-                    className="text-white fw-semibold fs-6 me-4"
-                  >
-                    About
-                  </Nav.Link>
-                  <Nav.Link
-                    href="/admission"
-                    className="text-white fw-semibold fs-6 me-4"
-                  >
-                    Admission
-                  </Nav.Link>
-                  <Nav.Link
-                    href="/alumni"
-                    className="text-white fw-semibold fs-6 me-4"
-                  >
-                    Alumni
-                  </Nav.Link>
-                  <Nav.Link
-                    href="/contact"
-                    className="text-white fw-semibold fs-6 me-4"
-                  >
-                    Contact
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-              <Button
-                className="d-lg-none d-sm-block shadow-none border-0 rounded-5 menu_iconn "
-                variant="secondary"
-                onClick={toggleMenu}
-              >
-                {isMenuVisible ? "X" : "Menu"}
-              </Button>
-            </Container>
-          </Navbar>
-        </div>
+                </Nav.Link>
+                <Nav.Link
+                  href="/about"
+                  className="text-white fw-semibold fs-6 me-4"
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link
+                  href="/admission"
+                  className="text-white fw-semibold fs-6 me-4"
+                >
+                  Admission
+                </Nav.Link>
+                <Nav.Link
+                  href="/updates"
+                  className="text-white fw-semibold fs-6 me-4"
+                >
+                  Updates
+                </Nav.Link>
+                <Nav.Link
+                  href="/contact"
+                  className="text-white fw-semibold fs-6 me-4"
+                >
+                  Contact
+                </Nav.Link>
+                <Nav.Link
+                  href="/rules"
+                  className="text-white fw-semibold fs-6 me-4"
+                >
+                  Rules and Regulations
+                </Nav.Link>
+                <Nav.Link href="/" className="text-white fw-semibold fs-6">
+                  Login
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+            <Button
+              className="d-lg-none d-sm-block shadow-none border-0 rounded-5 menu_iconn "
+              variant="secondary"
+              onClick={toggleMenu}
+            >
+              {isMenuVisible ? "X" : "Menu"}
+            </Button>
+          </Container>
+        </Navbar>
         {isMenuVisible && (
           <Container fluid className="menu_carrier">
             <div className="menu_inner">
@@ -114,11 +118,17 @@ function NavComp() {
                 <Nav.Link href="/admission" className="">
                   Admission
                 </Nav.Link>
-                <Nav.Link href="/alumni" className="">
-                  Alumni
+                <Nav.Link href="/updates" className="">
+                  Updates
                 </Nav.Link>
                 <Nav.Link href="/contact" className="">
                   Contact
+                </Nav.Link>
+                <Nav.Link href="/rules" className="">
+                  Rules and Regulation
+                </Nav.Link>
+                <Nav.Link href="/" className="">
+                  Login
                 </Nav.Link>
               </ul>
             </div>

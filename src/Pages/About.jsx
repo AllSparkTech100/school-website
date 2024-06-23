@@ -7,6 +7,7 @@ import { GrCertificate } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa6";
 import { GoTriangleRight } from "react-icons/go";
 import { GiWorld } from "react-icons/gi";
+import TeachersCard from "../Components/TeachersCard";
 import meet from "/public/images/meet.svg";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -139,9 +140,61 @@ function About() {
               </button>
             </Col>
 
-            <Col md={6} lg={6} sm={12}    data-aos="fade-left"
-                data-aos-duration="500">
+            <Col
+              md={6}
+              lg={6}
+              sm={12}
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
               <img src={meet} className="img-fluid" alt="" />
+            </Col>
+          </Row>
+        </Container>
+
+        {/* staffs */}
+        <Container className="staffs">
+          <Col>
+            <h3 className="fw-bold m-5 text-primary text-center">
+              Our Experienced Staff
+            </h3>
+          </Col>
+          <Row className="mt-3">
+            <Col md={6} sm={12} lg={3}>
+              <TeachersCard
+                imgUrl={
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name="Micahael john"
+                text="Professor"
+              />
+            </Col>
+            <Col md={6} sm={12} lg={3}>
+              <TeachersCard
+                imgUrl={
+                  "https://plus.unsplash.com/premium_photo-1661505218403-c684557a824d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name="Favour Peters"
+                text="Physics Teacher"
+              />
+            </Col>
+            <Col md={6} sm={12} lg={3}>
+              <TeachersCard
+                imgUrl={
+                  "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name="James Effiong"
+                text="Social Science Teacher"
+              />
+            </Col>
+            <Col md={6} sm={12} lg={3}>
+              <TeachersCard
+                imgUrl={
+                  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name="Musa Habib"
+                text="Eucationist"
+              />
             </Col>
           </Row>
         </Container>

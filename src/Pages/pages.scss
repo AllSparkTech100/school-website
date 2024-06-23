@@ -113,25 +113,36 @@
   }
 }
 
-.duties, .learns{
-  margin-top:10rem;
+.duties,
+.learns {
+  margin-top: 10rem;
 }
 
-.learns{
-  h3{
+.learns {
+  h3 {
     font-size: 2rem;
     font-weight: bold;
     font-family: $fontFamily;
   }
-  p{
+  p {
     font-size: 1.2rem;
   }
-  img{
+  img {
     position: relative;
     top: 3rem;
   }
 }
 
+.staffs {
+  margin-top: 10rem;
+}
+
+// Styles for Contact Section
+.contact_intro {
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)),
+    url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fhome.oxfordowl.co.uk%2Fat-school%2Freception-at-primary-school%2Fwhat-to-expect-in-reception-age-4-5%2F&psig=AOvVaw3yZs_d2RJiaP3iY6YCWNEy&ust=1719237193976000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDKqfDv8YYDFQAAAAAdAAAAABAE");
+}
 
 @media screen and (max-widt: 320px) {
 }
