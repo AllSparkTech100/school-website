@@ -150,7 +150,6 @@
 .contact_carrier {
   .contact-inner {
     height: 100vh !important;
-
     .contacts {
       .contact-info {
         display: flex;
@@ -169,6 +168,37 @@
       }
     }
   }
+
+  //icon style
+  .more_socials {
+    width: 100%;
+    .icons {
+      .icon-carrier {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        a{
+          color: white;
+        }
+        &:first-child {
+          margin: 0;
+        }
+        .first_icon {
+          height: 40px;
+          width: 40px;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // icon style end
 }
 
 @media screen and (max-widt: 320px) {
