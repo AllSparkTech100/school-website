@@ -20,10 +20,15 @@ function Contact() {
         </Container>
 
         {/* Contact */}
-        <Container className="mt-3 contact_carrier bg-primary">
+        <Container className="mt-3 contact_carrier">
           <Row className="contact-inner">
-            <Col md={6} lg={6} sm={12} className="p-5 bg-secondary">
-              <h2 className="fw-bold text-warning">Contact Information</h2>
+            <Col
+              md={6}
+              lg={6}
+              sm={12}
+              className="p-3 p-md-5 p-lg-5 bg-secondary"
+            >
+              <h2 className="fw-bold text-warning mt-3 mt-md-0 mt-lg-0">Contact Information</h2>
               <p className="fw-normal text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
                 incidunt sequi soluta beatae voluptates ducimus?
@@ -32,7 +37,7 @@ function Contact() {
               <div className="contacts">
                 <div className="contact-info">
                   <div className="contact_images mt-3">
-                    <FaHome size={30} />
+                    <FaHome size={20} />
                   </div>
                   <h6 className="ms-3 mt-4 text-white me-0 mb-0">
                     93 Surulere Way off,
@@ -42,7 +47,7 @@ function Contact() {
 
                 <div className="contact-info">
                   <div className="contact_images mt-3">
-                    <HiOutlineMailOpen size={30} />
+                    <HiOutlineMailOpen size={20} />
                   </div>
                   <h6 className="ms-3 mt-4 text-white me-0 mb-0">
                     <a
@@ -62,7 +67,7 @@ function Contact() {
                 </div>
                 <div className="contact-info">
                   <div className="contact_images mt-3">
-                    <FaPhoneAlt size={30} />
+                    <FaPhoneAlt size={20} />
                   </div>
                   <h6 className="ms-3 mt-4 mb-0 me-0">
                     <a href="tel:+23480498578398" className="text-white">
@@ -76,12 +81,16 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="mt-5 more_socials">
+              <div className="mt-5 mb-5 more_socials">
                 <h4 className="text-white fw-medium">Follow Us Via:</h4>
                 <div className="icons d-flex align-items-center">
                   <div className="icon-carrier">
                     <div className="first_icon bg-danger">
-                      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {" "}
                         <FaInstagram size={25} />
                       </a>
@@ -127,82 +136,85 @@ function Contact() {
                 </div>
               </div>
             </Col>
-            <Col md={6} lg={6} sm={12} className="bg-white p-5">
-              <h2 className="fw-bold text-dark">Get in touch</h2>
+            <Col md={6} lg={6} sm={12} className="bg-white p-3 p-md-5 p-lg-5">
+              <h2 className="fw-bold text-dark mt-3 mt-md-0 mt-lg-0">Get in touch</h2>
               <p className="fw-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
                 incidunt sequi soluta beatae voluptates ducimus?
               </p>
-              <Form>
-                {/* Name and Email */}
-                <Row>
-                  <Form.Group
-                    as={Col}
-                    md={12}
-                    lg={12}
-                    sm={12}
-                    controlId="formGridName"
-                  >
-                    <Form.Control
-                      type="text"
-                      className="shadow-none rounded-5 mb-4 mt-5 p-3"
-                      placeholder="Name"
-                    />
-                  </Form.Group>
+              <div>
+                <Form>
+                  {/* Name and Email */}
+                  <Row>
+                    <Form.Group
+                      as={Col}
+                      md={12}
+                      lg={12}
+                      sm={12}
+                      controlId="formGridName"
+                    >
+                      <Form.Control
+                        type="text"
+                        className="shadow-none border-1 border-primary rounded-5 mb-4 mt-5 p-3"
+                        placeholder="Name"
+                      />
+                    </Form.Group>
 
-                  <Form.Group
-                    as={Col}
-                    md={12}
-                    lg={12}
-                    sm={12}
-                    controlId="formGridEmail"
-                  >
-                    <Form.Control
-                      type="email"
-                      className="shadow-none rounded-5  mb-4 p-3"
-                      placeholder="Email"
-                      required
-                    />
-                  </Form.Group>
-                </Row>
-                {/* Subject and Comment */}
-                <Row>
-                  <Form.Group
-                    as={Col}
-                    md={12}
-                    lg={12}
-                    sm={12}
-                    controlId="formGridPhone"
-                  >
-                    <Form.Control
-                      type="text"
-                      className="shadow-none  mb-4 rounded-5 p-3"
-                      placeholder="Phone"
-                      maxLength={20}
-                    />
-                  </Form.Group>
-                  <Form.Group
-                    as={Col}
-                    md={12}
-                    lg={12}
-                    sm={12}
-                    controlId="formGridTextArea"
-                  >
-                    <Form.Control
-                      as="textarea"
-                      type="textarea"
-                      className="shadow-none rounded-4 h-100 p-3"
-                      placeholder="Comments"
-                      required
-                    />
-                  </Form.Group>
-                </Row>
-                <div className="mt-5">
-                  <buttto className="buttons btn_primary">
-                    <a href="">Send a Message</a>
-                  </buttto>
-                </div>
-              </Form>
+                    <Form.Group
+                      as={Col}
+                      md={12}
+                      lg={12}
+                      sm={12}
+                      controlId="formGridEmail"
+                    >
+                      <Form.Control
+                        type="email"
+                        className="shadow-none border-1 border-primary rounded-5  mb-4 p-3"
+                        placeholder="Email"
+                        required
+                      />
+                    </Form.Group>
+                  </Row>
+                  {/* Subject and Comment */}
+                  <Row>
+                    <Form.Group
+                      as={Col}
+                      md={12}
+                      lg={12}
+                      sm={12}
+                      controlId="formGridSubject"
+                    >
+                      <Form.Control
+                        type="text"
+                        className="shadow-none border-1 border-primary mb-4 rounded-5 p-3"
+                        placeholder="Phone"
+                        maxLength={20}
+                      />
+                    </Form.Group>
+                    <Form.Group
+                      as={Col}
+                      md={12}
+                      lg={12}
+                      sm={12}
+                      controlId="formGridTextArea"
+                    >
+                      <Form.Control
+                        as="textarea"
+                        type="textarea"
+                        className="shadow-none border-1 border-primary rounded-4 p-3"
+                        placeholder="Comments"
+                        required
+                      />
+                    </Form.Group>
+                  </Row>
+                  {/* Send Button */}
+                  <div className="mt-5">
+                    <buttton className="buttons btn_primary">
+                      <a href="">Send us a Message</a>
+                    </buttton>
+                  </div>
+                </Form>
+              </div>
             </Col>
           </Row>
         </Container>

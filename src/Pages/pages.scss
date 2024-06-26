@@ -141,6 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
   h3 {
     color: $accent;
     font-family: $font;
@@ -149,7 +150,7 @@
 }
 .contact_carrier {
   .contact-inner {
-    height: 100vh !important;
+    // height: 100vh !important;
     .contacts {
       .contact-info {
         display: flex;
@@ -178,7 +179,7 @@
         align-items: center;
         justify-content: space-between;
         color: white;
-        a{
+        a {
           color: white;
         }
         &:first-child {
@@ -197,9 +198,27 @@
       }
     }
   }
-
   // icon style end
 }
 
-@media screen and (max-widt: 320px) {
+
+@media screen and (max-width: 320px) {
+  // .contact_carrier {
+  //   margin-bottom: 6rem;
+  //   .contact-inner {
+  //     height: 100vh !important;
+  //     .contacts {
+  //       .contact-info {
+  //         display: flex;
+  //         align-items: center;
+  //         h6 {
+  //           font-size: 12px;
+  //           a {
+  //             font-size: 12px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
