@@ -77,7 +77,6 @@
   margin-top: 15rem;
   h3 {
     font-family: $fontFamily;
-    margin: 8rem;
   }
   p {
     font-size: 1.12rem;
@@ -87,9 +86,9 @@
     border-radius: 20px;
     height: 100%;
     background-color: $secondary;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 
@@ -147,9 +146,29 @@
     font-family: $font;
     font-size: 3rem;
   }
+}
+.contact_carrier {
+  .contact-inner {
+    height: 100vh !important;
 
-  // .contact_carrier {
-  // }
+    .contacts {
+      .contact-info {
+        display: flex;
+        align-items: center;
+        .contact_images {
+          color: $primary;
+          background-color: $bgColor;
+          height: 50px;
+          width: 50px;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-widt: 320px) {

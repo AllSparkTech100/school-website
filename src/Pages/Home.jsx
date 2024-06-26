@@ -292,7 +292,7 @@ function Home() {
 
         {/* Customer Support */}
         <Container className="support">
-          <h3 className="text-center fw-bold fs-2 text-primary text-uppercase">
+          <h3 className="text-center fw-bold fs-4 text-primary text-uppercase">
             Student Support Center
           </h3>
           <Row className="mt-5">
@@ -326,7 +326,7 @@ function Home() {
               </div>
             </Col>
             <Col data-aos="fade-left" data-aos-duration="500">
-              <div className="message d-md-block d-lg-flex d-none">
+              <div className="message d-none d-md-none d-lg-flex">
                 <FaMessage size={150} className="text-white" />
               </div>
             </Col>
