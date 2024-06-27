@@ -33,7 +33,7 @@ function Home() {
           <Col
             lg={8}
             sm={12}
-            md={6}
+            md={10}
             data-aos-startEvent="DOMContentLoad"
             className="hero_inner"
           >
@@ -63,13 +63,13 @@ function Home() {
         </Container>
         {/* Application Procedures */}
         <Container className="applications">
-          <Row className="gx-5">
+          <Row>
             {/* Procedures */}
             <Col
               sm={12}
               md={6}
               lg={6}
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               className="mt-5"
             >
@@ -119,19 +119,18 @@ function Home() {
               <h5
                 data-aos="fade-down"
                 data-aos-duration="500"
-                // data-aos-offset="10"
                 className="text-uppercase fw-bold text-primary serve_title"
               >
                 What we offer
               </h5>
             </Col>
-            <Row className="mt-3 p-lg-2 p-md-2 gx-5 p-0">
-            {/* safety */}
+            <Row className="mt-3 p-lg-2 p-md-2 gx-4 p-0">
+              {/* safety */}
               <Col
                 data-aos="fade-down"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
                 className="mb-5"
               >
@@ -159,9 +158,9 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
-                className="mb-3"
+                className="mb-5"
               >
                 <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
                   <div>
@@ -187,9 +186,9 @@ function Home() {
                 data-aos="fade-down"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
-                className="mb-3"
+                className="mb-5"
               >
                 <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
                   <div>
@@ -215,9 +214,9 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
-                className="mb-3"
+                className="mb-5"
               >
                 <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
                   <div>
@@ -291,7 +290,7 @@ function Home() {
         {/* School Courses */}
         <Container fluid="sm" className="courses">
           <h2 className="text-center fw-bold">Our Curriculums</h2>
-          <p className="text-center fs-4">
+          <p className="text-center fs-5">
             We Offer all British and European Standard Courses{" "}
           </p>
           <div>
@@ -309,10 +308,11 @@ function Home() {
 
         {/* Customer Support */}
         <Container className="support">
-          <h3 className="text-center fw-bold fs-4 text-primary text-uppercase">
+          <h3 className="text-center fw-bold text-primary text-uppercase">
             Student Support Center
           </h3>
           <Row className="mt-5">
+            {/* Excellent thoughts */}
             <Col
               md={6}
               lg={6}
@@ -327,7 +327,7 @@ function Home() {
                 </span>
               </h2>
 
-              <p className="mt-5 mb-5 text-justify">
+              <p className="my-3">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laborum ratione repellat quia laboriosam fuga aspernatur saepe
                 maxime, magnam ipsa, culpa, est id labore Debitis, tempora.
@@ -342,9 +342,13 @@ function Home() {
                 </div>
               </div>
             </Col>
+            {/* message icon */}
             <Col data-aos="fade-left" data-aos-duration="500">
-              <div className="message d-none d-md-none d-lg-flex">
-                <FaMessage size={150} className="text-white" />
+              <div className="message d-none d-md-block d-lg-block">
+                <FaMessage
+                  size={150}
+                  className=" d-none d-md-block d-lg-block text-white"
+                />
               </div>
             </Col>
           </Row>
