@@ -65,6 +65,7 @@
     font-family: $fontFamily;
   }
   p {
+    text-align: justify;
     font-size: 1.12rem;
   }
 }
@@ -201,24 +202,32 @@
   // icon style end
 }
 
-
 @media screen and (max-width: 320px) {
-  // .contact_carrier {
-  //   margin-bottom: 6rem;
-  //   .contact-inner {
-  //     height: 100vh !important;
-  //     .contacts {
-  //       .contact-info {
-  //         display: flex;
-  //         align-items: center;
-  //         h6 {
-  //           font-size: 12px;
-  //           a {
-  //             font-size: 12px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  .hero {
+    .hero_inner {
+      p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .applications {
+    h4 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+  .service{
+    p{
+      text-align: justify;
+    }
+  }
 }

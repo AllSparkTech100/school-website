@@ -39,6 +39,15 @@ img {
 
 .count_carrier {
   margin-top: 10rem;
+  h3 {
+    color: $secondary;
+    font-size: 4rem ;
+  }
+  h6 {
+    color: $foot;
+    font-weight: 500 !important;
+    font-size: 1.5rem;
+  }
 }
 
 #course_card {
@@ -153,4 +162,5 @@ img {
 }
 
 @media screen and (max-width: 320px) {
+
 }

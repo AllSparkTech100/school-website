@@ -22,6 +22,7 @@ function Contact() {
         {/* Contact */}
         <Container className="mt-3 contact_carrier">
           <Row className="contact-inner">
+          {/* First container information */}
             <Col
               md={6}
               lg={6}
@@ -83,7 +84,7 @@ function Contact() {
 
               <div className="mt-5 mb-5 more_socials">
                 <h4 className="text-white fw-medium">Follow Us Via:</h4>
-                <div className="icons d-flex align-items-center">
+                <div className="icons my-4 d-flex align-items-center">
                   <div className="icon-carrier">
                     <div className="first_icon bg-danger">
                       <a
@@ -136,6 +137,10 @@ function Contact() {
                 </div>
               </div>
             </Col>
+
+
+            
+            {/* Form Container */}
             <Col md={6} lg={6} sm={12} className="bg-white p-3 p-md-5 p-lg-5">
               <h2 className="fw-bold text-dark mt-3 mt-md-0 mt-lg-0">Get in touch</h2>
               <p className="fw-normal">

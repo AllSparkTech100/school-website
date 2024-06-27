@@ -64,11 +64,12 @@ function Home() {
         {/* Application Procedures */}
         <Container className="applications">
           <Row className="gx-5">
+            {/* Procedures */}
             <Col
               sm={12}
               md={6}
               lg={6}
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="500"
               className="mt-5"
             >
@@ -90,23 +91,20 @@ function Home() {
                 facere natus deleniti quisquam, facilis fugiat quae culpa
                 asperiores.
               </p>
-              <button
-                data-aos="fade-right"
-                data-aos-duration="500"
-                className="btn_primary buttons my-3"
-              >
+              <button className="btn_primary buttons my-3">
                 <a href="" className="text-decoration-none text-white">
                   Register Here
                 </a>
               </button>
             </Col>
+            {/* Application Image */}
             <Col className="d-none d-md-block d-lg-block" md={6} lg={6}>
               <img
                 data-aos="fade-left"
                 data-aos-duration="500"
                 src={graduate}
                 alt=""
-                className="img-fluid h-100 rounded-5"
+                className="img-fluid d-none d-md-block d-lg-block h-100 rounded-5"
               />
             </Col>
           </Row>
@@ -121,37 +119,42 @@ function Home() {
               <h5
                 data-aos="fade-down"
                 data-aos-duration="500"
+                // data-aos-offset="10"
                 className="text-uppercase fw-bold text-primary serve_title"
               >
                 What we offer
               </h5>
             </Col>
-            <Row className="mt-3 p-lg-2 p-md-2 p-0">
+            <Row className="mt-3 p-lg-2 p-md-2 gx-5 p-0">
+            {/* safety */}
               <Col
                 data-aos="fade-down"
                 data-aos-duration="500"
                 sm={12}
                 md={6}
                 lg={6}
-                className="mb-3"
+                className="mb-5"
               >
                 <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
                   <div>
                     <IoShieldCheckmarkOutline size={90} />
                   </div>
-                  <p className="fw-normal ms-lg-5 ms-md-2">
+                  <div className="text-left ms-md-3 ms-lg-4">
                     <h4 className="fw-semibold text-uppercase mt-4 mb-3">
                       safety first
                     </h4>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Veniam officia, ipsam quasi enim libero obcaecati
-                    repellendus inventore molestiae et perspiciatis dolor,
-                    adipisci laudantium facilis at fugiat iure nulla commodi sed
-                    numquam, eveniet dolorem consequuntur exercitationem eos
-                    velit? Nemo, quia! Corporis.
-                  </p>
+                    <p className="fw-normal ">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Veniam officia, ipsam quasi enim libero obcaecati
+                      repellendus inventore molestiae et perspiciatis dolor,
+                      adipisci laudantium facilis at fugiat iure nulla commodi
+                      sed numquam, eveniet dolorem consequuntur exercitationem
+                      eos velit? Nemo, quia! Corporis.
+                    </p>
+                  </div>
                 </div>
               </Col>
+              {/* infant */}
               <Col
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -164,19 +167,22 @@ function Home() {
                   <div>
                     <FaChild size={90} />
                   </div>
-                  <p className="fw-normal ms-lg-5 ms-md-2">
+                  <div className="text-left ms-md-3 ms-lg-4">
                     <h4 className="fw-semibold text-uppercase mt-4 mb-3">
-                      infant care
+                      Infant Care
                     </h4>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Veniam officia, ipsam quasi enim libero obcaecati
-                    repellendus inventore molestiae et perspiciatis dolor,
-                    adipisci laudantium facilis at fugiat iure nulla commodi sed
-                    numquam, eveniet dolorem consequuntur exercitationem eos
-                    velit? Nemo, quia! Corporis.
-                  </p>
+                    <p className="fw-normal ">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Veniam officia, ipsam quasi enim libero obcaecati
+                      repellendus inventore molestiae et perspiciatis dolor,
+                      adipisci laudantium facilis at fugiat iure nulla commodi
+                      sed numquam, eveniet dolorem consequuntur exercitationem
+                      eos velit? Nemo, quia! Corporis.
+                    </p>
+                  </div>
                 </div>
               </Col>
+              {/* environment */}
               <Col
                 data-aos="fade-down"
                 data-aos-duration="500"
@@ -189,19 +195,22 @@ function Home() {
                   <div>
                     <GiWorld size={90} />
                   </div>
-                  <p className="fw-normal ms-lg-5 ms-md-2">
+                  <div className="text-left ms-md-3 ms-lg-4">
                     <h4 className="fw-semibold text-uppercase mt-4 mb-3">
-                      happy environment
+                      happy Environment
                     </h4>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Veniam officia, ipsam quasi enim libero obcaecati
-                    repellendus inventore molestiae et perspiciatis dolor,
-                    adipisci laudantium facilis at fugiat iure nulla commodi sed
-                    numquam, eveniet dolorem consequuntur exercitationem eos
-                    velit? Nemo, quia! Corporis.
-                  </p>
+                    <p className="fw-normal ">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Veniam officia, ipsam quasi enim libero obcaecati
+                      repellendus inventore molestiae et perspiciatis dolor,
+                      adipisci laudantium facilis at fugiat iure nulla commodi
+                      sed numquam, eveniet dolorem consequuntur exercitationem
+                      eos velit? Nemo, quia! Corporis.
+                    </p>
+                  </div>
                 </div>
               </Col>
+              {/* certification */}
               <Col
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -214,17 +223,19 @@ function Home() {
                   <div>
                     <GrCertificate size={90} />
                   </div>
-                  <p className="fw-normal ms-lg-5 ms-md-2">
+                  <div className="text-left ms-md-3 ms-lg-4">
                     <h4 className="fw-semibold text-uppercase mt-4 mb-3">
                       certified teachers
                     </h4>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Veniam officia, ipsam quasi enim libero obcaecati
-                    repellendus inventore molestiae et perspiciatis dolor,
-                    adipisci laudantium facilis at fugiat iure nulla commodi sed
-                    numquam, eveniet dolorem consequuntur exercitationem eos
-                    velit? Nemo, quia! Corporis.
-                  </p>
+                    <p className="fw-normal ">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Veniam officia, ipsam quasi enim libero obcaecati
+                      repellendus inventore molestiae et perspiciatis dolor,
+                      adipisci laudantium facilis at fugiat iure nulla commodi
+                      sed numquam, eveniet dolorem consequuntur exercitationem
+                      eos velit? Nemo, quia! Corporis.
+                    </p>
+                  </div>
                 </div>
               </Col>
             </Row>
@@ -245,7 +256,9 @@ function Home() {
               date={"29th May, 2024"}
               time={"08:00 - 14:00"}
               venue={"Mainland Street NG, Rivers State"}
-              text={" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam."}
+              text={
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam."
+              }
             />
             <SchoolEvent
               img={student}
@@ -253,7 +266,9 @@ function Home() {
               date={"29th July, 2024"}
               time={"10:00 - 16:00"}
               venue={"12 Ajeokuta Street NG, Ondo State"}
-              text={"Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quisquam."}
+              text={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quisquam."
+              }
             />
             <SchoolEvent
               img={airport}
@@ -261,7 +276,9 @@ function Home() {
               date={"29th June, 2024"}
               time={"10:00 - 16:00"}
               venue={"PortHarcourt Airport, Rivers State"}
-              text={"  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam."}
+              text={
+                "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam."
+              }
             />
           </Row>
           <div className="mt-5 mb-5 d-flex align-items-center justify-content-center">
